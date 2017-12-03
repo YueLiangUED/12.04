@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/mobiscroll_date.css">
+    <link rel="stylesheet" href="css/mobiscroll.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section>
+    <div></div>
+    <p>移动光宽带30M</p>
+    <p>¥<span id="price">700</span>/<i id="dd">年</i></p>
+</section>
+<section>
+    <div id="bl_lx">
+        <p>办理类型</p>
+        <ul class="clear">
+            <li class="active">只办宽带</li>
+            <li>承诺套餐宽带折扣方案</li>
+        </ul>
+    </div>
+    <div id="tc_lx">
+        <p>套餐类型</p>
+        <ul class="clear">
+            <li class="active">1年</li>
+            <li>2年</li>
+            <li id="last">3年</li>
+        </ul>
+    </div>
+    <div id="tc_dw">
+        <p>承诺套餐档位</p>
+        <ul class="clear">
+            <li class="active">38元档</li>
+            <li id="_58">58元档</li>
+            <li id="_88">88元档</li>
+        </ul>
+    </div>
+</section>
+<section>
+    <p>促销</p>
+    <ul>
+        <li><span>线上加赠</span>爱家宽带一次性赠送3-4GB流量</li>
+        <li><span>专属优惠</span>移动号码承诺指定4G套餐享宽带折扣低至0折</li>
+        <li><span>折扣秒杀</span>只办宽带折扣秒杀，请到北京移动客户端办理</li>
+    </ul>
+</section>
+<section>
+    <p>快速预约</p>
+    <p>北京市</p>
+    <select>
+        <option value="" selected>请选择区县</option>
+        <option value="">东城区</option>
+        <option value="">西城区</option>
+        <option value="">朝阳区</option>
+        <option value="">海淀区</option>
+        <option value="">丰台区</option>
+        <option value="">大兴区</option>
+        <option value="">怀柔区</option>
+        <option value="">昌平区</option>
+        <option value="">顺义区</option>
+        <option value="">通州区</option>
+        <option value="">石景山区</option>
+        <option value="">房山区</option>
+        <option value="">平谷区</option>
+        <option value="">密云县</option>
+        <option value="">延庆县</option>
+        <option value="">门头沟区</option>
+    </select>
+    <input type="text" placeholder="请输入小区名或村名">
+    <input type="text" placeholder="请输入楼号">
+    <input type="text" placeholder="请输入单元">
+    <input type="text" placeholder="楼号、房号或门牌号">
+    <p>例如:广渠门内大街安化北里小区10号院10号楼105室<br>具体地址能否安装，及业务规则是否符合办理条件，以工作人员确认为准，如不符合安装及办理条件订单自动取消，届时将短信通知您。</p>
+</section>
+<section>
+    <form action="">
+        <label for="">报装人姓名：</label>
+        <input type="text">
+    </form>
+    <form action="">
+        <label for="">报装人手机号：</label>
+        <input type="text">
+    </form>
+    <input type="checkbox"><label>同时做为上门装机联系人</label>
+</section>
+<section>
+    <form action="">
+        <label for="">期望安装时间：</label>
+        <input id="USER_AGE" type="text" placeholder="请选择期望安装时间" readonly>
+    </form>
+    <form action="">
+        <label for="">期望时间段：</label>
+        <select name="" id="">
+            <option value="" selected>请选择期望时间段</option>
+            <option value="">1</option>
+            <option value="">1</option>
+            <option value="">1</option>
+            <option value="">1</option>
+        </select>
+    </form>
+    <span>实际上门安装时间请以安装人员沟通为准。</span>
+</section>
+<section>
+    <form action="">
+        <label for="">联系人：</label>
+        <input type="text">
+    </form>
+    <form action="">
+        <label for="">联系号码：</label>
+        <input type="text">
+    </form>
+</section>
+<section>
+    <p>支付方式：</p>
+    <span>上门支付</span>
+    <p>工程师上门安装完成后支付宽带费用。</p>
+    <a href="">立即办理</a>
+</section>
+<section>
+    <ul id="tab" class="clear">
+        <li class="active">产品介绍</li>
+        <li>业务规则</li>
+        <li>温馨提示</li>
+    </ul>
+    <div class="active">1</div>
+    <div>2</div>
+    <div>3</div>
+</section>
+</body>
+</html>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/mobiscroll_date.js" charset="utf-8"></script>
+<script src="js/mobiscroll.js"></script>
+<script src="js/index.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var currYear = (new Date()).getFullYear();
+        var opt={};
+        opt.date = {preset : 'date'};
+        opt.datetime = {preset : 'datetime'};
+        opt.time = {preset : 'time'};
+        opt.default = {
+            theme: 'android-ics light', //皮肤样式
+            display: 'modal', //显示方式
+            mode: 'scroller', //日期选择模式
+            dateFormat: 'yyyy-mm-dd',
+            lang: 'zh',
+            showNow: true,
+            nowText: "今天",
+            startYear: currYear - 0, //开始年份
+            endYear: currYear + 100, //结束年份
+            minDate: new Date()
+        };
+
+        $("#USER_AGE").mobiscroll($.extend(opt['date'], opt['default']));
+
+    });
+</script>
