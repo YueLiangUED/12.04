@@ -6,6 +6,9 @@ html,body{
 i{
     font-style: normal;
 }
+input{
+    -webkit-appearance: none;
+}
 section{
     box-sizing: border-box;
     padding: 0 .3rem;
@@ -102,7 +105,7 @@ section:nth-child(3) ul li span{
     display: none;
 }
 section:nth-child(4){
-    height: 4.5rem;
+    height: 4rem;
 }
 section:nth-child(4) p:nth-child(1){
     font-size: .26rem;
