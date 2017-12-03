@@ -6,7 +6,7 @@ html,body{
 i{
     font-style: normal;
 }
-input{
+input:not(input[checkbox]){
     -webkit-appearance: none;
 }
 section{
@@ -174,7 +174,7 @@ section:nth-child(5) input,section:nth-child(6) input,section:nth-child(7) input
     background-color: #ffffff;
 }
 section:nth-child(5) input[type='checkbox']{
-    margin-left: 1.8rem;
+    margin: .05rem .1rem 0 1.8rem;
     padding: 0;
     width: .2rem;
     height: .2rem;
