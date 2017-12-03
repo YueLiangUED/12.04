@@ -58,7 +58,7 @@ section:nth-child(2) div ul li{
     height: .54rem;
     font-size: .26rem;
     text-align: center;
-    line-height: .52rem;
+    line-height: .54rem;
     color: #222222;
     border: 1px solid #cccccc;
     border-radius: 3px;
@@ -97,7 +97,7 @@ section:nth-child(3) ul li span{
     height: .26rem;
     font-size: .18rem;
     text-align: center;
-    line-height: .24rem;
+    line-height: .26rem;
     border: 1px solid #ed276a;
     color: #ed276a;
 }
