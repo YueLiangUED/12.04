@@ -233,7 +233,7 @@ section:nth-child(8) p:nth-child(3){
     color: #999999;
 }
 section:nth-child(8) input{
-    margin: .05rem .1rem 0 .8rem;
+    margin: .05rem .1rem 0 0;
     padding: 0;
     width: .2rem;
     height: .2rem;
@@ -242,7 +242,7 @@ section:nth-child(8) input{
 }
 section:nth-child(8) label{
     font-size: .24rem;
-    color: #999999;
+    color: #ff0000;
 }
 section:nth-child(8) a{
     display: block;
