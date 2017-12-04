@@ -125,7 +125,7 @@ section:nth-child(4) select{
     padding-left: .45rem;
     width: 3.3rem;
     height: .54rem;
-    font-size: .18rem;
+    font-size: .24rem;
     border: 1px solid #cccccc;
     background-color: #ffffff;
 }
@@ -135,7 +135,7 @@ section:nth-child(4) input{
     padding-left: .1rem;
     width: 1.4rem;
     height: .54rem;
-    font-size: .18rem;
+    font-size: .24rem;
     border-radius: 3px;
     border: 1px solid #cccccc;
 }
@@ -183,7 +183,6 @@ section:nth-child(5) input[type='checkbox']{
     -webkit-appearance: checkbox;
 }
 section:nth-child(5) label:last-child,section:nth-child(6) span:last-child{
-    font-size: .18rem;
     color: #999999;
 }
 section:nth-child(6) span:last-child{
@@ -229,7 +228,7 @@ section:nth-child(8) span{
 }
 section:nth-child(8) p:nth-child(3){
     padding-left: 1.7rem;
-    font-size: .18rem;
+    font-size: .24rem;
     line-height: .48rem;
     color: #999999;
 }
@@ -242,7 +241,7 @@ section:nth-child(8) input{
     -webkit-appearance: checkbox;
 }
 section:nth-child(8) label{
-    font-size: .18rem;
+    font-size: .24rem;
     color: #999999;
 }
 section:nth-child(8) a{
@@ -274,10 +273,14 @@ section:nth-child(9) ul li{
     color: #333333;
 }
 section:nth-child(9) ul li.active{
+    color: #0085ce;
     border-bottom: 4px solid #0085ce;
 }
 section:nth-child(9) div{
     display: none;
+}
+section:nth-child(9) div:nth-child(2){
+    margin-bottom: -.3rem;
 }
 section:nth-child(9) div.active{
     display: block;
