@@ -82,6 +82,34 @@ $(function () {
             $('#price').text('0');
         }
     });
+
+    //勾选上门联系人自动写入表单内容
+    var $name_1 = $('#name_1'),
+        $name_2 = $('#name_2'),
+        $tel_1 = $('#tel_1'),
+        $tel_2 = $('#tel_2');
+    window.setInterval(function () {
+        if($('#ck_1').is(':checked')){
+            console.log(1);
+            $name_2.val($name_1.val());
+            $tel_2.val($tel_1.val());
+        }
+    },0);
+    //判断是否勾选同意以点击立即办理按钮
+    $('#btn').on('click',function () {
+        alert('请先阅读产品介绍并勾选');
+        return false;
+    });
+    $('#ck_2').on('click',function () {
+        if($('#ck_2').is(':checked') == false){
+            $('#btn').on('click',function () {
+                alert('请先阅读产品介绍并勾选');
+                return false;
+            });
+        }else if($('#ck_2').is(':checked')){
+            $('#btn').unbind('click');
+        }
+    });
     //选项卡
     function tab($selector){
         var $lis = $selector.find('li');
