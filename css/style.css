@@ -330,3 +330,11 @@ section:nth-child(9) div:nth-child(3) p,section:nth-child(9) div:nth-child(4) p{
 section:nth-child(9) div:nth-child(3) p span,section:nth-child(9) div:nth-child(4) p span{
     color: #ff0000;
 }
+section:nth-child(9) div:nth-child(4) i{
+    margin: .1rem 0 .1rem -.35rem;
+    display: block;
+    width: 6.9rem;
+    height: 2.58rem;
+    background: url("../images/table.png") center no-repeat;
+    background-size: cover;
+}
